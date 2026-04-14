@@ -1,20 +1,19 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional
-import aiosmtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 import os
 from datetime import datetime
+import resend
 
 router = APIRouter()
 
-# Email configuration
-SMTP_SERVER = os.getenv('SMTP_SERVER', 'smtp.gmail.com')
-SMTP_PORT = int(os.getenv('SMTP_PORT', '587'))
-SMTP_USERNAME = os.getenv('SMTP_USERNAME', '')
-SMTP_PASSWORD = os.getenv('SMTP_PASSWORD', '')
-RECIPIENT_EMAIL = 'info@saiananta.com'
+# Resend Email configuration
+RESEND_API_KEY = os.getenv('RESEND_API_KEY', '')
+RECIPIENT_EMAIL = os.getenv('RECIPIENT_EMAIL', 'info@saiananta.com')
+FROM_EMAIL = os.getenv('FROM_EMAIL', 'onboarding@resend.dev')
+
+# Initialize Resend
+resend.api_key = RESEND_API_KEY
 
 class EnquiryRequest(BaseModel):
     name: str = Field(..., min_length=1)
@@ -29,29 +28,18 @@ class SiteVisitRequest(BaseModel):
     email: EmailStr
     date: str
 
-async def send_email(subject: str, body: str):
-    """Send email using SMTP"""
+async def send_email(subject: str, html_body: str):
+    """Send email using Resend API"""
     try:
-        message = MIMEMultipart('alternative')
-        message['Subject'] = subject
-        message['From'] = SMTP_USERNAME
-        message['To'] = RECIPIENT_EMAIL
+        params = {
+            "from": FROM_EMAIL,
+            "to": [RECIPIENT_EMAIL],
+            "subject": subject,
+            "html": html_body
+        }
         
-        html_part = MIMEText(body, 'html')
-        message.attach(html_part)
-        
-        # Try port 465 with SSL if port 587 fails
-        use_ssl = int(SMTP_PORT) == 465
-        
-        await aiosmtplib.send(
-            message,
-            hostname=SMTP_SERVER,
-            port=SMTP_PORT,
-            username=SMTP_USERNAME,
-            password=SMTP_PASSWORD,
-            use_tls=use_ssl,
-            start_tls=not use_ssl
-        )
+        email = resend.Emails.send(params)
+        print(f"Email sent successfully: {email}")
         return True
     except Exception as e:
         print(f"Email sending failed: {str(e)}")
@@ -87,7 +75,7 @@ async def submit_enquiry(enquiry: EnquiryRequest):
         # Send email
         email_sent = await send_email(
             subject=f"New Enquiry from {enquiry.name} - Sai Ananta",
-            body=email_body
+            html_body=email_body
         )
         
         if not email_sent:
@@ -131,7 +119,7 @@ async def book_site_visit(visit: SiteVisitRequest):
         
         email_sent = await send_email(
             subject=f"Site Visit Request from {visit.name} - Sai Ananta",
-            body=email_body
+            html_body=email_body
         )
         
         return {
