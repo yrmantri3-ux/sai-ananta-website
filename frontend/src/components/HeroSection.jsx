@@ -32,16 +32,9 @@ const HeroSection = ({ onEnquiryClick }) => {
               </div>
             </div>
             
-            {/* Main Heading with Lotus Logo */}
+            {/* Main Heading - Aligned to left */}
             <div className="space-y-4">
-              <div className="flex items-center justify-center gap-4">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_c3d6dd33-c332-4562-92cf-4b2464c4812d/artifacts/xe3ggepa_Sai%20Ananta%20Logo.png"
-                  alt="Sai Ananta Lotus"
-                  className="h-20 w-auto"
-                />
-              </div>
-              <h1 className="text-6xl md:text-7xl font-serif text-slate-900 leading-tight text-center" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h1 className="text-6xl md:text-7xl font-serif text-slate-900 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Sai Ananta
               </h1>
               <p className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600 font-light italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -61,16 +54,11 @@ const HeroSection = ({ onEnquiryClick }) => {
               <span className="font-medium">{projectInfo.hero.location}</span>
             </div>
 
-            {/* Pricing Card with Gold Accents */}
-            <div className="glass-card rounded-3xl p-8 border-2 border-purple-200 premium-hover">
+            {/* Pricing Card with Navy Accents */}
+            <div className="glass-card rounded-3xl p-8 border-2 border-blue-200 premium-hover">
               <div className="grid grid-cols-2 gap-8">
-                <div className="relative">
-                  <div className="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full flex items-center justify-center shadow-lg">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  </div>
-                  <p className="text-sm text-slate-600 mb-2 mt-4">Configuration</p>
+                <div>
+                  <p className="text-sm text-slate-600 mb-2">Configuration</p>
                   <p className="text-2xl font-bold text-slate-900">{projectInfo.configuration}</p>
                 </div>
                 <div>
