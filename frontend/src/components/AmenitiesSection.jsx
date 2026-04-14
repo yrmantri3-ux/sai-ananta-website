@@ -39,7 +39,7 @@ const AmenitiesSection = () => {
   };
 
   return (
-    <section id="amenities" className="py-32 relative overflow-hidden">
+    <section id="amenities" className="py-20 relative overflow-hidden">
       {/* Sky Gradient Background */}
       <div className="absolute inset-0 sky-gradient" />
       
@@ -62,26 +62,28 @@ const AmenitiesSection = () => {
         </div>
 
         <Tabs defaultValue="rooftop" className="max-w-6xl mx-auto" onValueChange={setActiveTab}>
-          <TabsList className="grid w-full grid-cols-3 mb-12 glass-card p-2 rounded-2xl border-2 border-purple-200 shadow-xl">
-            <TabsTrigger 
-              value="rooftop" 
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
-            >
-              🌅 Rooftop
-            </TabsTrigger>
-            <TabsTrigger 
-              value="ground"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
-            >
-              🏊 Ground Level
-            </TabsTrigger>
-            <TabsTrigger 
-              value="other"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
-            >
-              ⭐ Premium
-            </TabsTrigger>
-          </TabsList>
+          <div className="mb-12 bg-white/90 backdrop-blur-sm p-2 rounded-2xl border-2 border-purple-200 shadow-xl">
+            <TabsList className="grid w-full grid-cols-3 bg-transparent">
+              <TabsTrigger 
+                value="rooftop" 
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
+              >
+                🌅 Rooftop
+              </TabsTrigger>
+              <TabsTrigger 
+                value="ground"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
+              >
+                🏊 Ground Level
+              </TabsTrigger>
+              <TabsTrigger 
+                value="other"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
+              >
+                ⭐ Premium
+              </TabsTrigger>
+            </TabsList>
+          </div>
 
           <TabsContent value="rooftop" className="space-y-8">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

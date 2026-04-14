@@ -10,6 +10,9 @@ from typing import List
 import uuid
 from datetime import datetime, timezone
 
+# Import enquiry routes  
+from api.enquiry import router as enquiry_router
+
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -68,6 +71,9 @@ async def get_status_checks():
 
 # Include the router in the main app
 app.include_router(api_router)
+
+# Include enquiry router
+app.include_router(enquiry_router, prefix="/api", tags=["enquiry"])
 
 app.add_middleware(
     CORSMiddleware,

@@ -32,16 +32,18 @@ const HeroSection = ({ onEnquiryClick }) => {
               </div>
             </div>
             
-            {/* Main Heading with Lotus Icon */}
+            {/* Main Heading with Lotus Logo */}
             <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <svg className="w-12 h-12 text-pink-500" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C9.5 2 7 4 7 7c0 2 1 3 1 5 0 1-1 2-2 3-1 1-2 2-2 4 0 3 3 5 6 5h4c3 0 6-2 6-5 0-2-1-3-2-4-1-1-2-2-2-3 0-2 1-3 1-5 0-3-2.5-5-5-5zm0 2c1.66 0 3 1.79 3 4 0 1.5-.67 2.17-1 3.5-.16.66-.5 1.34-1 2-.5-.66-.84-1.34-1-2-.33-1.33-1-2-1-3.5 0-2.21 1.34-4 3-4z"/>
-                </svg>
-                <h1 className="text-6xl md:text-7xl font-serif text-slate-900 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  {projectInfo.hero.title}
-                </h1>
+              <div className="flex items-center justify-center gap-4">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_c3d6dd33-c332-4562-92cf-4b2464c4812d/artifacts/xe3ggepa_Sai%20Ananta%20Logo.png"
+                  alt="Sai Ananta Lotus"
+                  className="h-20 w-auto"
+                />
               </div>
+              <h1 className="text-6xl md:text-7xl font-serif text-slate-900 leading-tight text-center" style={{ fontFamily: "'Playfair Display', serif" }}>
+                Sai Ananta
+              </h1>
               <p className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600 font-light italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 {projectInfo.hero.subtitle}
               </p>

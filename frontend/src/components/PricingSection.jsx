@@ -3,7 +3,7 @@ import { Check, Star } from 'lucide-react';
 import { Button } from './ui/button';
 import { projectInfo } from '../data/mock';
 
-const PricingSection = () => {
+const PricingSection = ({ onEnquiryClick }) => {
   return (
     <section id="pricing" className="py-32 relative overflow-hidden">
       {/* Sky Gradient Background */}

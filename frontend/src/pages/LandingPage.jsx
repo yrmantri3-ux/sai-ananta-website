@@ -12,6 +12,7 @@ import DeveloperSection from '../components/DeveloperSection';
 import SiteVisitSection from '../components/SiteVisitSection';
 import Footer from '../components/Footer';
 import EnquiryModal from '../components/EnquiryModal';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const LandingPage = () => {
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
@@ -22,7 +23,7 @@ const LandingPage = () => {
       <HeroSection onEnquiryClick={() => setIsEnquiryModalOpen(true)} />
       <OverviewSection />
       <HighlightsSection />
-      <PricingSection />
+      <PricingSection onEnquiryClick={() => setIsEnquiryModalOpen(true)} />
       <AmenitiesSection />
       <FloorPlanSection onEnquiryClick={() => setIsEnquiryModalOpen(true)} />
       <GallerySection />
@@ -35,6 +36,8 @@ const LandingPage = () => {
         isOpen={isEnquiryModalOpen} 
         onClose={() => setIsEnquiryModalOpen(false)} 
       />
+      
+      <WhatsAppButton />
     </div>
   );
 };
