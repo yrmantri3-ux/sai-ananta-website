@@ -38,6 +38,10 @@ const OverviewSection = () => {
             {projectInfo.overview.title}
           </h2>
           
+          <p className="text-3xl text-slate-700 italic mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            {projectInfo.overview.subtitle}
+          </p>
+          
           {/* Decorative Lotus Divider */}
           <div className="lotus-divider mx-auto" />
           
@@ -80,8 +84,8 @@ const OverviewSection = () => {
                 <svg className="w-12 h-12 mx-auto text-purple-600" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
                 </svg>
-                <p className="text-6xl font-bold gradient-text-purple-pink" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  10K+
+                <p className="text-6xl font-bold gradient-text-navy-pink" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  1K+
                 </p>
                 <p className="text-slate-600 font-semibold text-lg">Happy Families</p>
               </div>

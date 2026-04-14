@@ -17,8 +17,9 @@ export const projectInfo = {
   },
 
   overview: {
-    title: "Where Blessings Meet Modern Living",
-    description: "Nestled in the spiritually enriched neighborhood of Wadhmukhwadi, Sai Ananta offers a perfect blend of peace, prosperity, and modern convenience. Located beside the revered Shri Sant Dnyaneshwar Maharaj Thorlya Paduka Mandir and just behind Sai Mandir, this is where your blessed journey begins."
+    title: "The Tallest Tower of Wadmukhwadi",
+    subtitle: "Where Blessings Meet Modern Living",
+    description: "Nestled in the spiritually enriched neighborhood of Wadhmukhwadi, Sai Ananta offers a perfect blend of peace, prosperity, and modern convenience. Located near Sai Mandir with green, unobstructed views, this landmark stands blessed forever."
   },
 
   highlights: [
@@ -129,23 +130,24 @@ export const projectInfo = {
   ],
 
   nearbyLocations: [
-    { name: "Pune International Airport", distance: "12 km", icon: "Plane" },
-    { name: "Pune Railway Station", distance: "8 km", icon: "Train" },
-    { name: "Phoenix Market City", distance: "6 km", icon: "ShoppingBag" },
-    { name: "Charholi IT Park", distance: "2 km", icon: "Briefcase" },
-    { name: "Lohegaon", distance: "4 km", icon: "MapPin" },
-    { name: "Viman Nagar", distance: "5 km", icon: "Building2" },
-    { name: "Inner Ring Road", distance: "1.5 km", icon: "Route" },
-    { name: "Alandi-Pune Highway", distance: "200 m", icon: "Navigation" }
+    { name: "Nashik Highway", distance: "8 mins", icon: "Route" },
+    { name: "Airport", distance: "25 mins", icon: "Plane" },
+    { name: "Railway Station", distance: "35 mins", icon: "Train" },
+    { name: "Chakan MIDC", distance: "20 mins", icon: "Briefcase" },
+    { name: "EON IT Park", distance: "42 mins", icon: "Building2" },
+    { name: "Phoenix Market City", distance: "30 mins", icon: "ShoppingBag" },
+    { name: "Alandi-Pune Highway", distance: "200 m", icon: "Navigation" },
+    { name: "Sai Mandir", distance: "Near", icon: "MapPin" }
   ],
 
   developer: {
-    name: "Shree Venkateshwara Group",
+    name: "Shree Venkateshwara Group & Shinde Group",
     logo: "https://customer-assets.emergentagent.com/job_c3d6dd33-c332-4562-92cf-4b2464c4812d/artifacts/gvegs6hp_SVG%20Developer%20Logo.pdf",
     experience: "20+ Years",
     projects: "100+ Completed Projects",
-    families: "10,000+ Happy Families",
-    description: "With over two decades of excellence in real estate, Shree Venkateshwara Group has been creating landmark residential projects across Pune. Our commitment to quality, timely delivery, and customer satisfaction has made us one of the most trusted names in the industry."
+    families: "1,000+ Happy Families",
+    expertise: "Diversified Expertise Across Real Estate, RMC & Contracting",
+    description: "With over two decades of excellence in real estate, Shree Venkateshwara Group and Shinde Group have been creating landmark residential projects across Pune. Our commitment to quality, timely delivery, and customer satisfaction has made us one of the most trusted names in the industry."
   },
 
   contact: {

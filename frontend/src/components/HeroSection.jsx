@@ -95,7 +95,7 @@ const HeroSection = ({ onEnquiryClick }) => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 px-10 py-7 text-lg shadow-lg hover:shadow-xl transition-all"
+                className="border-2 border-blue-900 text-blue-900 hover:bg-blue-50 px-10 py-7 text-lg shadow-lg hover:shadow-xl transition-all"
                 onClick={() => window.location.href = `tel:${projectInfo.contact.phone}`}
               >
                 <Phone className="w-5 h-5 mr-2" />
