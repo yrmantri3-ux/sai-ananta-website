@@ -40,13 +40,17 @@ async def send_email(subject: str, body: str):
         html_part = MIMEText(body, 'html')
         message.attach(html_part)
         
+        # Try port 465 with SSL if port 587 fails
+        use_ssl = int(SMTP_PORT) == 465
+        
         await aiosmtplib.send(
             message,
             hostname=SMTP_SERVER,
             port=SMTP_PORT,
             username=SMTP_USERNAME,
             password=SMTP_PASSWORD,
-            start_tls=True
+            use_tls=use_ssl,
+            start_tls=not use_ssl
         )
         return True
     except Exception as e:
