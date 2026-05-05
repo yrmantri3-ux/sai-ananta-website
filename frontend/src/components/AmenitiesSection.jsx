@@ -29,26 +29,34 @@ const AmenitiesSection = () => {
         </div>
 
         <Tabs defaultValue="rooftop" className="max-w-6xl mx-auto" onValueChange={setActiveTab}>
-          <div className="mb-12 bg-white/90 backdrop-blur-sm p-2 rounded-2xl border-2 border-purple-200 shadow-xl overflow-x-auto">
-            <TabsList className="grid w-full grid-cols-3 bg-transparent gap-1 min-w-max">
+          <div className="mb-12 bg-white/90 backdrop-blur-sm p-2 rounded-2xl border-2 border-purple-200 shadow-xl">
+            <TabsList className="grid w-full grid-cols-3 bg-transparent gap-2">
               <TabsTrigger 
                 value="rooftop" 
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-3 px-3 md:px-4 text-sm md:text-lg font-bold transition-all border-0 whitespace-nowrap"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
               >
-                <span className="hidden md:inline">🌅 Rooftop</span>
-                <span className="md:hidden">🌅 Roof</span>
+                <span className="block text-center leading-tight">
+                  <span className="block">🌅</span>
+                  <span className="block text-xs md:text-base">Rooftop</span>
+                </span>
               </TabsTrigger>
               <TabsTrigger 
                 value="ground"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-3 px-3 md:px-4 text-sm md:text-lg font-bold transition-all border-0 whitespace-nowrap"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
               >
-                🏊 Ground
+                <span className="block text-center leading-tight">
+                  <span className="block">🏊</span>
+                  <span className="block text-xs md:text-base">Ground</span>
+                </span>
               </TabsTrigger>
               <TabsTrigger 
                 value="other"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-3 px-3 md:px-4 text-sm md:text-lg font-bold transition-all border-0 whitespace-nowrap"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
               >
-                ⭐ Premium
+                <span className="block text-center leading-tight">
+                  <span className="block">⭐</span>
+                  <span className="block text-xs md:text-base">Premium</span>
+                </span>
               </TabsTrigger>
             </TabsList>
           </div>

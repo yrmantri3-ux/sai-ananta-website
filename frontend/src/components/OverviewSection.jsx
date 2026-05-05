@@ -28,7 +28,7 @@ const OverviewSection = () => {
           </div>
           
           {/* Heading */}
-          <h2 className="text-6xl md:text-7xl font-serif text-slate-900 leading-tight fade-in" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-slate-900 leading-tight fade-in px-2" style={{ fontFamily: "'Playfair Display', serif" }}>
             {projectInfo.overview.title}
           </h2>
           

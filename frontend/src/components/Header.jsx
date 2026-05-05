@@ -80,7 +80,7 @@ const Header = ({ onEnquiryClick }) => {
             </button>
           </nav>
 
-          {/* Contact Info & CTA with spiritual glow */}
+          {/* Contact Info & CTA */}
           <div className="flex items-center gap-1 md:gap-4">
             <div className="hidden lg:flex items-center gap-3 text-sm">
               <a 
@@ -93,9 +93,10 @@ const Header = ({ onEnquiryClick }) => {
             </div>
             <Button 
               onClick={onEnquiryClick}
-              className="relative overflow-hidden bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white px-3 py-2 md:px-8 md:py-3 text-xs md:text-base shadow-lg spiritual-glow"
+              className="relative overflow-hidden bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white px-2 py-1.5 text-xs md:px-8 md:py-3 md:text-base shadow-lg spiritual-glow whitespace-nowrap"
             >
-              <span className="relative z-10">Enquire Now</span>
+              <span className="relative z-10 md:hidden">Enquire</span>
+              <span className="relative z-10 hidden md:inline">Enquire Now</span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 translate-x-full group-hover:translate-x-0 transition-transform duration-1000" />
             </Button>
           </div>
