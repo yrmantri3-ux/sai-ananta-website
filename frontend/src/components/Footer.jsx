@@ -107,8 +107,8 @@ const Footer = () => {
               © {currentYear} Sai Ananta by {projectInfo.developer.name}. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="/privacy-policy" className="hover:text-purple-400 transition-colors">Privacy Policy</Link>
-              <Link to="/terms-and-conditions" className="hover:text-purple-400 transition-colors">Terms & Conditions</Link>
+              <a href="/privacy-policy" className="hover:text-purple-400 transition-colors">Privacy Policy</a>
+              <a href="/terms-and-conditions" className="hover:text-purple-400 transition-colors">Terms & Conditions</a>
             </div>
           </div>
           <p className="text-xs text-slate-500 text-center mt-4">
