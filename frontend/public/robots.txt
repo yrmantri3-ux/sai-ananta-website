@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://sai-ananta-website.vercel.app/sitemap.xml
+
+# Disallow admin or private pages (if any)
+# Disallow: /admin/
+
+# Crawl-delay
+Crawl-delay: 1

@@ -145,10 +145,10 @@ const SiteVisitSection = () => {
           <div className="mt-12 text-center text-white">
             <p className="text-lg mb-4">Or call us directly at</p>
             <a 
-              href={`tel:${'+919876543210'}`}
+              href="tel:+917066331177"
               className="text-3xl font-bold hover:text-purple-200 transition-colors"
             >
-              +91 98765 43210
+              +91 70663 31177
             </a>
           </div>
         </div>

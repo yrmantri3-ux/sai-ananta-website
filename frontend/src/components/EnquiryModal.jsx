@@ -191,11 +191,11 @@ const EnquiryModal = ({ isOpen, onClose }) => {
           <div className="pt-4 border-t border-slate-200">
             <p className="text-center text-sm text-slate-600 mb-3">Or call us directly</p>
             <a
-              href="tel:+917796655556"
+              href="tel:+917066331177"
               className="flex items-center justify-center gap-3 w-full py-3 rounded-xl border-2 border-blue-900 text-blue-900 hover:bg-blue-50 transition-colors font-semibold"
             >
               <Phone className="w-5 h-5" />
-              <span>+91 77966 55556</span>
+              <span>+91 70663 31177</span>
             </a>
           </div>
 

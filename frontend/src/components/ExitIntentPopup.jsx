@@ -100,15 +100,11 @@ const ExitIntentPopup = ({ onEnquiryClick }) => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500 mt-1">✓</span>
-                <span>Free site visit with pickup & drop facility</span>
+                <span>Easy loan options available</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500 mt-1">✓</span>
                 <span>Expert consultation on payment plans</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-500 mt-1">✓</span>
-                <span>Flexible payment options available</span>
               </li>
             </ul>
           </div>
