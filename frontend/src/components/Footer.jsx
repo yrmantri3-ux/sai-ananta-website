@@ -113,7 +113,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-xs text-slate-500 text-center mt-4">
-            MahaRERA Registration No: [To be updated]. Available at: http://maharera.mahaonline.gov.in
+            MahaRERA Registration No: {projectInfo.reraNumber}. Available at: http://maharera.mahaonline.gov.in
           </p>
         </div>
       </div>

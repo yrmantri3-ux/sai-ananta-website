@@ -2,11 +2,11 @@
 
 export const projectInfo = {
   name: "Sai Ananta",
-  formerName: "Formerly Codename Blessing",
   tagline: "Blessed Forever",
   location: "Wadhmukhwadi, Pune",
   startingPrice: "₹66 Lacs*",
   configuration: "2 & 3 BHK Apartments",
+  reraNumber: "PR1260002502966",
   
   hero: {
     title: "Sai Ananta",
@@ -94,11 +94,9 @@ export const projectInfo = {
     ],
     other: [
       { name: "Clubhouse", icon: "Home" },
-      { name: "EV Charging", icon: "Zap" },
-      { name: "Solar Water Heating", icon: "Sun" },
+      { name: "EV charging for selected units only", icon: "Zap" },
       { name: "Digital Lock & VDP", icon: "Lock" },
-      { name: "Invisible Grills", icon: "Grid2x2" },
-      { name: "DG Backup", icon: "Battery" }
+      { name: "DG backup for common areas only", icon: "Battery" }
     ]
   },
 
@@ -151,7 +149,7 @@ export const projectInfo = {
   },
 
   contact: {
-    phone: "+91 98765 43210",
+    phone: "+91 70663 31177",
     email: "info@saiananta.com",
     address: "Wadhmukhwadi, Charholi Budruk, Pune - 412105"
   },

@@ -13,6 +13,8 @@ import SiteVisitSection from '../components/SiteVisitSection';
 import Footer from '../components/Footer';
 import EnquiryModal from '../components/EnquiryModal';
 import WhatsAppButton from '../components/WhatsAppButton';
+import CallButton from '../components/CallButton';
+import ExitIntentPopup from '../components/ExitIntentPopup';
 
 const LandingPage = () => {
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
@@ -38,6 +40,8 @@ const LandingPage = () => {
       />
       
       <WhatsAppButton />
+      <CallButton />
+      <ExitIntentPopup onEnquiryClick={() => setIsEnquiryModalOpen(true)} />
     </div>
   );
 };

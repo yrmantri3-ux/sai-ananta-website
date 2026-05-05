@@ -62,23 +62,23 @@ const AmenitiesSection = () => {
         </div>
 
         <Tabs defaultValue="rooftop" className="max-w-6xl mx-auto" onValueChange={setActiveTab}>
-          <div className="mb-12 bg-white/90 backdrop-blur-sm p-2 rounded-2xl border-2 border-purple-200 shadow-xl">
-            <TabsList className="grid w-full grid-cols-3 bg-transparent">
+          <div className="mb-12 bg-white/90 backdrop-blur-sm p-2 rounded-2xl border-2 border-purple-200 shadow-xl overflow-hidden">
+            <TabsList className="grid w-full grid-cols-3 bg-transparent gap-2">
               <TabsTrigger 
                 value="rooftop" 
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all border-0"
               >
                 🌅 Rooftop
               </TabsTrigger>
               <TabsTrigger 
                 value="ground"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all border-0"
               >
                 🏊 Ground Level
               </TabsTrigger>
               <TabsTrigger 
                 value="other"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 text-lg font-bold transition-all border-0"
               >
                 ⭐ Premium
               </TabsTrigger>
@@ -111,6 +111,7 @@ const AmenitiesSection = () => {
               src="https://customer-assets.emergentagent.com/job_vivanta-2-3-bhk/artifacts/ngdxil8u_Rooftop%20Amenities%20Pune%20Apartment.jpg"
               alt="Amenities"
               className="w-full h-auto object-cover"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-purple-500/10" />
             <div className="absolute bottom-8 left-8 right-8 text-white">

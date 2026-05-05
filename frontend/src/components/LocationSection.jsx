@@ -14,9 +14,9 @@ const LocationSection = () => {
   const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.1234567890!2d${projectInfo.mapCenter.lng}!3d${projectInfo.mapCenter.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDM5JzQ4LjAiTiA3M8KwNTYnNTguOSJF!5e0!3m2!1sen!2sin!4v1234567890`;
 
   return (
-    <section id="location" className="py-24 bg-white">
+    <section id="location" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-5xl md:text-6xl font-serif text-slate-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Strategic Location
           </h2>

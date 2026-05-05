@@ -86,13 +86,14 @@ const PricingSection = ({ onEnquiryClick }) => {
               </div>
 
               <Button 
+                onClick={onEnquiryClick}
                 className={`w-full py-7 text-lg font-semibold shadow-lg hover:shadow-2xl transition-all ${
                   plan.featured 
                     ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700' 
                     : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700'
                 }`}
               >
-                View Floor Plan
+                Enquire Now
               </Button>
             </div>
             </div>

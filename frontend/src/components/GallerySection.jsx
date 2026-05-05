@@ -34,6 +34,7 @@ const GallerySection = () => {
               src={projectInfo.gallery[currentIndex].url}
               alt={projectInfo.gallery[currentIndex].title}
               className="w-full h-96 md:h-[600px] object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
             
@@ -76,6 +77,7 @@ const GallerySection = () => {
                 src={image.url}
                 alt={image.title}
                 className="w-full h-24 object-cover"
+                loading="lazy"
               />
             </button>
           ))}

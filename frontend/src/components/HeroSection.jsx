@@ -22,16 +22,6 @@ const HeroSection = ({ onEnquiryClick }) => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 fade-in">
-            {/* Former Name Badge */}
-            <div className="inline-block">
-              <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full border-2 border-pink-200 shadow-lg">
-                <Sparkles className="w-4 h-4 text-pink-600" />
-                <p className="text-pink-600 font-medium text-sm tracking-wide">
-                  {projectInfo.formerName}
-                </p>
-              </div>
-            </div>
-            
             {/* Main Heading - Aligned to left */}
             <div className="space-y-4">
               <h1 className="text-6xl md:text-7xl font-serif text-slate-900 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -126,7 +116,7 @@ const HeroSection = ({ onEnquiryClick }) => {
                 </div>
                 <div>
                   <p className="font-bold text-slate-900 text-lg">RERA Approved</p>
-                  <p className="text-sm text-slate-600">Premium Quality Assured</p>
+                  <p className="text-xs text-slate-600">{projectInfo.reraNumber}</p>
                 </div>
               </div>
             </div>
