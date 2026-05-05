@@ -99,12 +99,13 @@ const EnquiryModal = ({ isOpen, onClose }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md p-0 overflow-hidden">
-        {/* Header with Logo */}
-        <div className="bg-gradient-to-r from-blue-900 to-blue-700 p-6 text-center relative">
+      <DialogContent className="sm:max-w-md p-0 overflow-hidden max-h-[90vh] flex flex-col">
+        {/* Header with Logo - Fixed at top */}
+        <div className="bg-gradient-to-r from-blue-900 to-blue-700 p-4 md:p-6 text-center relative flex-shrink-0">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white/80 hover:text-white"
+            className="absolute top-2 right-2 md:top-4 md:right-4 text-white bg-white/20 hover:bg-white/30 rounded-full p-2 z-50"
+            aria-label="Close"
           >
             <X className="w-5 h-5" />
           </button>
@@ -112,17 +113,18 @@ const EnquiryModal = ({ isOpen, onClose }) => {
           <img 
             src="https://customer-assets.emergentagent.com/job_c3d6dd33-c332-4562-92cf-4b2464c4812d/artifacts/xe3ggepa_Sai%20Ananta%20Logo.png"
             alt="Sai Ananta"
-            className="h-16 w-auto mx-auto mb-3"
+            className="h-12 md:h-16 w-auto mx-auto mb-2 md:mb-3"
           />
           
-          <h2 className="text-2xl font-bold text-white mb-1" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: "'Playfair Display', serif" }}>
             Get Pre Launch Deals
           </h2>
-          <p className="text-blue-100 text-sm">Limited time exclusive offers</p>
+          <p className="text-blue-100 text-xs md:text-sm">Limited time exclusive offers</p>
         </div>
 
-        {/* Form */}
-        <form onSubmit={handleSubmit} className="p-6 space-y-5">
+        {/* Form - Scrollable */}
+        <div className="overflow-y-auto flex-1">
+          <form onSubmit={handleSubmit} className="p-4 md:p-6 space-y-4 md:space-y-5">
           <div className="space-y-2">
             <Label htmlFor="name" className="text-slate-700 font-medium">Full Name *</Label>
             <Input
@@ -203,6 +205,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
             By submitting, you agree to receive updates about Sai Ananta
           </p>
         </form>
+        </div>
       </DialogContent>
     </Dialog>
   );
