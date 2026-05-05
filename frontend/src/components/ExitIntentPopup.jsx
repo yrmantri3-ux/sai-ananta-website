@@ -149,7 +149,6 @@ const ExitIntentPopup = ({ onEnquiryClick }) => {
             🔒 Your information is safe with us
           </p>
         </div>
-        </div>
       </div>
     </div>
   );
