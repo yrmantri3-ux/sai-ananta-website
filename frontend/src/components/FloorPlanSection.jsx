@@ -39,24 +39,24 @@ const FloorPlanSection = ({ onEnquiryClick }) => {
             </div>
 
             {/* Centered Unlock Content */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center space-y-8 px-6 glass-card p-12 rounded-3xl max-w-2xl border-2 border-purple-200 spiritual-glow">
-                <div className="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-2xl spiritual-glow">
-                  <Lock className="w-14 h-14 text-white" />
+            <div className="absolute inset-0 flex items-center justify-center p-4">
+              <div className="text-center space-y-6 md:space-y-8 px-4 md:px-6 glass-card p-6 md:p-12 rounded-3xl max-w-2xl border-2 border-purple-200 spiritual-glow">
+                <div className="w-20 h-20 md:w-28 md:h-28 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-2xl spiritual-glow">
+                  <Lock className="w-10 h-10 md:w-14 md:h-14 text-white" />
                 </div>
-                <h3 className="text-4xl md:text-5xl font-serif text-slate-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <h3 className="text-2xl md:text-4xl lg:text-5xl font-serif text-slate-900 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
                   View Detailed Floor Plans
                 </h3>
                 <div className="lotus-divider mx-auto" />
-                <p className="text-xl text-slate-700" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                <p className="text-base md:text-xl text-slate-700" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Submit your details to unlock complete floor plans with measurements and specifications
                 </p>
                 <Button 
                   size="lg"
                   onClick={onEnquiryClick}
-                  className="shimmer text-white px-12 py-7 text-xl shadow-2xl hover:shadow-3xl transition-all"
+                  className="shimmer text-white px-6 md:px-12 py-4 md:py-7 text-base md:text-xl shadow-2xl hover:shadow-3xl transition-all w-full md:w-auto"
                 >
-                  <Lock className="w-5 h-5 mr-2" />
+                  <Lock className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                   Unlock Floor Plans
                 </Button>
               </div>

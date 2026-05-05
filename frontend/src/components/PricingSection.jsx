@@ -47,15 +47,15 @@ const PricingSection = ({ onEnquiryClick }) => {
               }`}
             >
               {plan.featured && (
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="shimmer px-8 py-3 rounded-full font-bold text-sm flex items-center gap-2 shadow-xl border-2 border-white text-white">
-                    <Star className="w-5 h-5 fill-current" />
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
+                  <div className="shimmer px-6 py-2 rounded-full font-bold text-xs md:text-sm flex items-center gap-2 shadow-xl border-2 border-white text-white whitespace-nowrap">
+                    <Star className="w-4 h-4 fill-current" />
                     Most Popular Choice
                   </div>
                 </div>
               )}
 
-              <div className={`text-center mb-8 ${plan.featured ? 'text-purple-900' : 'text-slate-900'}`}>
+              <div className={`text-center mb-8 ${plan.featured ? 'text-purple-900 mt-4' : 'text-slate-900'}`}>
                 <h3 className="text-4xl font-bold mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {plan.type}
                 </h3>

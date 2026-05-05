@@ -40,8 +40,8 @@ const HeroSection = ({ onEnquiryClick }) => {
             </p>
 
             <div className="flex items-center gap-2 text-slate-700 bg-white/60 backdrop-blur-sm px-4 py-3 rounded-xl w-fit border border-purple-200">
-              <MapPin className="w-5 h-5 text-pink-600" />
-              <span className="font-medium">{projectInfo.hero.location}</span>
+              <MapPin className="w-4 h-4 md:w-5 md:h-5 text-pink-600 flex-shrink-0" />
+              <span className="font-medium text-sm md:text-base">{projectInfo.hero.location}</span>
             </div>
 
             {/* Pricing Card with Navy Accents */}
