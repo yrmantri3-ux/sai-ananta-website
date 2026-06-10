@@ -11,7 +11,8 @@ const iconMap = {
 };
 
 const LocationSection = () => {
-  const mapEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.1234567890!2d${projectInfo.mapCenter.lng}!3d${projectInfo.mapCenter.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDM5JzQ4LjAiTiA3M8KwNTYnNTguOSJF!5e0!3m2!1sen!2sin!4v1234567890`;
+  const mapDirectionsUrl = "https://maps.app.goo.gl/957JadBku8TTEhkj9";
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15120!2d73.94!3d18.63!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDM3JzQ4LjAiTiA3M8KwNTYnMzQuOCJF!5e0!3m2!1sen!2sin!4v1234567890";
 
   return (
     <section id="location" className="py-16 bg-white">
@@ -42,9 +43,20 @@ const LocationSection = () => {
                 className="w-full"
               />
             </div>
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-200">
-              <h3 className="font-semibold text-slate-900 mb-2 text-lg">Address</h3>
-              <p className="text-slate-700">{projectInfo.contact.address}</p>
+            <div className="flex gap-4">
+              <div className="flex-1 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-200">
+                <h3 className="font-semibold text-slate-900 mb-2 text-lg">Address</h3>
+                <p className="text-slate-700">{projectInfo.contact.address}</p>
+              </div>
+              <a
+                href={mapDirectionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-2xl font-semibold transition-colors shadow-lg"
+              >
+                <Navigation className="w-5 h-5" />
+                Get Directions
+              </a>
             </div>
           </div>
 

@@ -59,13 +59,13 @@ export const projectInfo = {
     {
       type: "2 BHK",
       price: "₹66 Lacs",
-      carpetArea: "Starting from 600 sq.ft",
+      carpetArea: "849 Sq Ft",
       features: ["Spacious Bedrooms", "Modern Kitchen", "Premium Fittings", "Ample Natural Light"]
     },
     {
       type: "3 BHK",
-      price: "₹91 Lacs",
-      carpetArea: "Starting from 850 sq.ft",
+      price: "₹92 Lacs",
+      carpetArea: "1137 Sq Ft",
       features: ["Luxurious Interiors", "Master Bedroom", "Spacious Living", "Premium Finishes"],
       featured: true
     }
