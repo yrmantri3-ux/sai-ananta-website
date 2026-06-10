@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import OverviewSection from '../components/OverviewSection';
@@ -18,6 +18,15 @@ import ExitIntentPopup from '../components/ExitIntentPopup';
 
 const LandingPage = () => {
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
+
+  // Auto-open enquiry modal after 5 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsEnquiryModalOpen(true);
+    }, 5000); // 5 seconds
+
+    return () => clearTimeout(timer); // Cleanup on unmount
+  }, []);
 
   return (
     <div className="landing-page">
