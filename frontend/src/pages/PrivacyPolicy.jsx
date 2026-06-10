@@ -112,7 +112,7 @@ const PrivacyPolicy = () => {
       <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
       <p>
         <strong>Sai Ananta</strong><br />
-        Wadhmukhwadi, Charholi Budruk, Pune - 412105, Maharashtra, India<br />
+        Laxmi-Narayan Nagar, Wadmukhwadi, Charholi Budruk, Pimpri-Chinchwad, Maharashtra 412105, Maharashtra, India<br />
         <strong>Phone:</strong> +91 70663 31177<br />
         <strong>Email:</strong> info@saiananta.com<br />
         <strong>Website:</strong> https://sai-ananta-website.vercel.app/

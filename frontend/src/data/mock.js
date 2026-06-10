@@ -151,7 +151,7 @@ export const projectInfo = {
   contact: {
     phone: "+91 70663 31177",
     email: "info@saiananta.com",
-    address: "Wadhmukhwadi, Charholi Budruk, Pune - 412105"
+    address: "Laxmi-Narayan Nagar, Wadmukhwadi, Charholi Budruk, Pimpri-Chinchwad, Maharashtra 412105"
   },
 
   // Map coordinates for Wadhmukhwadi, Pune
