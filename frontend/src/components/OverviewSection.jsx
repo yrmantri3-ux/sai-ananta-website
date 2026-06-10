@@ -6,7 +6,7 @@ const OverviewSection = () => {
     <section id="overview" className="py-32 bg-white relative overflow-hidden">
       {/* Decorative Lotus Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 opacity-10">
-        <svg viewBox="0 0 100 100" className="text-purple-500" fill="currentColor">
+        <svg viewBox="0 0 100 100" className="text-blue-600" fill="currentColor">
           <path d="M50 20 Q30 30 30 50 Q30 70 50 80 Q70 70 70 50 Q70 30 50 20 M50 30 Q40 35 40 50 Q40 65 50 70 Q60 65 60 50 Q60 35 50 30"/>
         </svg>
       </div>

@@ -21,7 +21,7 @@ const GallerySection = () => {
           <h2 className="text-5xl md:text-6xl font-serif text-slate-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Visual Gallery
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mx-auto mb-6" />
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-sky-400 rounded-full mx-auto mb-6" />
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             A glimpse into your future home
           </p>
@@ -90,7 +90,7 @@ const GallerySection = () => {
               onClick={() => setCurrentIndex(index)}
               className={`transition-all duration-300 rounded-full ${
                 currentIndex === index 
-                  ? 'w-8 h-2 bg-gradient-to-r from-purple-600 to-pink-600' 
+                  ? 'w-8 h-2 bg-gradient-to-r from-blue-700 to-sky-500' 
                   : 'w-2 h-2 bg-slate-300 hover:bg-slate-400'
               }`}
             />

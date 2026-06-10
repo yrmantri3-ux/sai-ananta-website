@@ -24,7 +24,7 @@ const Header = ({ onEnquiryClick }) => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-xl shadow-lg border-b border-purple-100' 
+        ? 'bg-white/95 backdrop-blur-xl shadow-lg border-b border-blue-100' 
         : 'bg-gradient-to-b from-white/80 to-transparent backdrop-blur-sm'
     }`}>
       {/* Decorative top border */}
@@ -45,38 +45,38 @@ const Header = ({ onEnquiryClick }) => {
           <nav className="hidden md:flex items-center gap-8">
             <button 
               onClick={() => scrollToSection('overview')} 
-              className="relative text-slate-700 hover:text-purple-600 transition-all font-medium group"
+              className="relative text-slate-700 hover:text-blue-700 transition-all font-medium group"
             >
               Overview
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-500 transition-all group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-400 transition-all group-hover:w-full" />
             </button>
             <button 
               onClick={() => scrollToSection('pricing')} 
-              className="relative text-slate-700 hover:text-purple-600 transition-all font-medium group"
+              className="relative text-slate-700 hover:text-blue-700 transition-all font-medium group"
             >
               Pricing
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-500 transition-all group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-400 transition-all group-hover:w-full" />
             </button>
             <button 
               onClick={() => scrollToSection('amenities')} 
-              className="relative text-slate-700 hover:text-purple-600 transition-all font-medium group"
+              className="relative text-slate-700 hover:text-blue-700 transition-all font-medium group"
             >
               Amenities
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-500 transition-all group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-400 transition-all group-hover:w-full" />
             </button>
             <button 
               onClick={() => scrollToSection('gallery')} 
-              className="relative text-slate-700 hover:text-purple-600 transition-all font-medium group"
+              className="relative text-slate-700 hover:text-blue-700 transition-all font-medium group"
             >
               Gallery
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-500 transition-all group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-400 transition-all group-hover:w-full" />
             </button>
             <button 
               onClick={() => scrollToSection('location')} 
-              className="relative text-slate-700 hover:text-purple-600 transition-all font-medium group"
+              className="relative text-slate-700 hover:text-blue-700 transition-all font-medium group"
             >
               Location
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-500 transition-all group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-400 transition-all group-hover:w-full" />
             </button>
           </nav>
 
@@ -85,7 +85,7 @@ const Header = ({ onEnquiryClick }) => {
             <div className="hidden lg:flex items-center gap-3 text-sm">
               <a 
                 href={`tel:${projectInfo.contact.phone}`} 
-                className="flex items-center gap-2 text-slate-700 hover:text-purple-600 transition-all px-4 py-2 rounded-full hover:bg-purple-50"
+                className="flex items-center gap-2 text-slate-700 hover:text-blue-700 transition-all px-4 py-2 rounded-full hover:bg-sky-50"
               >
                 <Phone className="w-4 h-4" />
                 <span className="font-medium">{projectInfo.contact.phone}</span>

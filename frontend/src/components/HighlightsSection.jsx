@@ -28,9 +28,9 @@ const HighlightsSection = () => {
             </div>
             
             {/* Floating Badge */}
-            <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-6 shadow-xl border border-purple-100">
+            <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-6 shadow-xl border border-blue-100">
               <div className="text-center">
-                <p className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <p className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-sky-500 bg-clip-text text-transparent">
                   15-30%
                 </p>
                 <p className="text-sm text-slate-600 font-medium">Growth Potential</p>
@@ -44,7 +44,7 @@ const HighlightsSection = () => {
               <h2 className="text-5xl font-serif text-slate-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Why Choose Sai Ananta
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" />
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-sky-400 rounded-full" />
             </div>
 
             <div className="grid gap-6">
@@ -53,10 +53,10 @@ const HighlightsSection = () => {
                 return (
                   <div 
                     key={index}
-                    className="group flex gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-100 hover:shadow-lg transition-all duration-300 hover:border-purple-300"
+                    className="group flex gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-blue-100 hover:shadow-lg transition-all duration-300 hover:border-blue-300"
                   >
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-600 to-sky-400 flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
                         <IconComponent className="w-7 h-7" />
                       </div>
                     </div>

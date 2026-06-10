@@ -11,7 +11,7 @@ const PricingSection = ({ onEnquiryClick }) => {
       
       {/* Floating Lotus Petals */}
       <div className="absolute top-1/4 left-10 w-20 h-20 opacity-20">
-        <svg viewBox="0 0 100 100" className="text-purple-500" fill="currentColor">
+        <svg viewBox="0 0 100 100" className="text-blue-600" fill="currentColor">
           <path d="M50 20 Q30 30 30 50 Q30 70 50 80 Q70 70 70 50 Q70 30 50 20"/>
         </svg>
       </div>
@@ -37,13 +37,13 @@ const PricingSection = ({ onEnquiryClick }) => {
               <div className={`absolute inset-0 rounded-3xl transform transition-transform group-hover:scale-105 ${
                 plan.featured 
                   ? 'bg-gradient-to-br from-purple-600 via-pink-600 to-purple-600 rotate-1' 
-                  : 'bg-gradient-to-br from-purple-100 to-pink-100 -rotate-1'
+                  : 'bg-gradient-to-br from-sky-50 to-blue-100 -rotate-1'
               }`} />
               
               <div className={`relative rounded-3xl p-10 transition-all duration-500 ${
                 plan.featured 
                   ? 'glass-card border-4 border-white shadow-2xl spiritual-glow' 
-                  : 'glass-card border-2 border-purple-200 shadow-xl hover:shadow-2xl'
+                  : 'glass-card border-2 border-blue-200 shadow-xl hover:shadow-2xl'
               }`}
             >
               {plan.featured && (
@@ -59,13 +59,13 @@ const PricingSection = ({ onEnquiryClick }) => {
                 <h3 className="text-4xl font-bold mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {plan.type}
                 </h3>
-                <p className={`text-sm mb-6 ${plan.featured ? 'text-purple-700' : 'text-slate-600'}`}>
+                <p className={`text-sm mb-6 ${plan.featured ? 'text-blue-800' : 'text-slate-600'}`}>
                   {plan.carpetArea}
                 </p>
-                <div className={`text-6xl font-bold mb-3 ${plan.featured ? 'gradient-text-purple-pink' : 'gradient-text-purple-pink'}`} style={{ fontFamily: "'Playfair Display', serif" }}>
+                <div className={`text-6xl font-bold mb-3 ${plan.featured ? 'gradient-text-blue-sky' : 'gradient-text-blue-sky'}`} style={{ fontFamily: "'Playfair Display', serif" }}>
                   {plan.price}
                 </div>
-                <p className={`text-sm ${plan.featured ? 'text-purple-700' : 'text-slate-500'}`}>
+                <p className={`text-sm ${plan.featured ? 'text-blue-800' : 'text-slate-500'}`}>
                   onwards*
                 </p>
               </div>
@@ -74,9 +74,9 @@ const PricingSection = ({ onEnquiryClick }) => {
                 {plan.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <div className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center ${
-                      plan.featured ? 'bg-gradient-to-br from-purple-500 to-pink-500' : 'bg-gradient-to-br from-purple-100 to-pink-100'
+                      plan.featured ? 'bg-gradient-to-br from-blue-600 to-sky-400' : 'bg-gradient-to-br from-sky-50 to-blue-100'
                     }`}>
-                      <Check className={`w-4 h-4 ${plan.featured ? 'text-white' : 'text-purple-600'}`} />
+                      <Check className={`w-4 h-4 ${plan.featured ? 'text-white' : 'text-blue-700'}`} />
                     </div>
                     <span className={`text-lg ${plan.featured ? 'text-purple-900' : 'text-slate-700'}`}>
                       {feature}
@@ -89,8 +89,8 @@ const PricingSection = ({ onEnquiryClick }) => {
                 onClick={onEnquiryClick}
                 className={`w-full py-7 text-lg font-semibold shadow-lg hover:shadow-2xl transition-all ${
                   plan.featured 
-                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700' 
-                    : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700'
+                    ? 'bg-gradient-to-r from-blue-700 to-sky-500 text-white hover:from-purple-700 hover:to-pink-700' 
+                    : 'bg-gradient-to-r from-blue-700 to-sky-500 text-white hover:from-purple-700 hover:to-pink-700'
                 }`}
               >
                 Enquire Now

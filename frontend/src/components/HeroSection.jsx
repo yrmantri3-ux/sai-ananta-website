@@ -39,8 +39,8 @@ const HeroSection = ({ onEnquiryClick }) => {
               {projectInfo.hero.description}
             </p>
 
-            <div className="flex items-center gap-2 text-slate-700 bg-white/60 backdrop-blur-sm px-4 py-3 rounded-xl w-fit border border-purple-200">
-              <MapPin className="w-4 h-4 md:w-5 md:h-5 text-pink-600 flex-shrink-0" />
+            <div className="flex items-center gap-2 text-slate-700 bg-white/60 backdrop-blur-sm px-4 py-3 rounded-xl w-fit border border-blue-200">
+              <MapPin className="w-4 h-4 md:w-5 md:h-5 text-sky-600 flex-shrink-0" />
               <span className="font-medium text-sm md:text-base">{projectInfo.hero.location}</span>
             </div>
 
@@ -53,7 +53,7 @@ const HeroSection = ({ onEnquiryClick }) => {
                 </div>
                 <div>
                   <p className="text-sm text-slate-600 mb-2">Starting From</p>
-                  <p className="text-4xl font-bold gradient-text-purple-pink">
+                  <p className="text-4xl font-bold gradient-text-blue-sky">
                     {projectInfo.startingPrice}
                   </p>
                 </div>
@@ -99,17 +99,17 @@ const HeroSection = ({ onEnquiryClick }) => {
                 alt="Sai Ananta Elevation"
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 via-transparent to-pink-500/10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 via-transparent to-sky-400/10" />
               
               {/* Decorative Corner Accent */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-500/20 to-transparent rounded-bl-full" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-sky-500/20 to-transparent rounded-bl-full" />
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-tr-full" />
             </div>
             
             {/* RERA Badge with Spiritual Glow */}
-            <div className="absolute -bottom-8 -left-8 glass-card rounded-2xl p-6 shadow-2xl border-2 border-purple-200 max-w-xs spiritual-glow">
+            <div className="absolute -bottom-8 -left-8 glass-card rounded-2xl p-6 shadow-2xl border-2 border-blue-200 max-w-xs spiritual-glow">
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white shadow-lg">
+                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 to-sky-400 flex items-center justify-center text-white shadow-lg">
                   <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                   </svg>
@@ -123,7 +123,7 @@ const HeroSection = ({ onEnquiryClick }) => {
 
             {/* Decorative Lotus Bottom Right */}
             <div className="absolute -bottom-8 -right-8 w-24 h-24 opacity-20">
-              <svg viewBox="0 0 100 100" className="text-purple-500" fill="currentColor">
+              <svg viewBox="0 0 100 100" className="text-blue-600" fill="currentColor">
                 <path d="M50 90 Q40 80 50 70 Q60 80 50 90 M50 70 Q55 65 50 60 Q45 65 50 70 M30 75 Q25 70 30 65 Q35 70 30 75 M70 75 Q65 70 70 65 Q75 70 70 75"/>
               </svg>
             </div>
@@ -134,10 +134,10 @@ const HeroSection = ({ onEnquiryClick }) => {
       {/* Scroll Indicator with Lotus */}
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="flex flex-col items-center gap-2">
-          <svg className="w-6 h-6 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 4C9.5 4 7 6 7 9c0 2 1 2 1 4 0 1-1 1-1 2 0 2 2 3 4 3h2c2 0 4-1 4-3 0-1-1-1-1-2 0-2 1-2 1-4 0-3-2.5-5-5-5z"/>
           </svg>
-          <p className="text-xs text-purple-600 font-medium tracking-wider">SCROLL</p>
+          <p className="text-xs text-blue-700 font-medium tracking-wider">SCROLL</p>
         </div>
       </div>
     </section>

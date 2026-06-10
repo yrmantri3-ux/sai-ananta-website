@@ -54,8 +54,8 @@ const ExitIntentPopup = ({ onEnquiryClick }) => {
         {/* Header with Gradient - Fixed */}
         <div className="bg-gradient-to-r from-blue-900 to-purple-800 p-4 md:p-8 text-center relative overflow-hidden flex-shrink-0">
           {/* Decorative elements */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-pink-500/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-32 h-32 bg-sky-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-32 h-32 bg-sky-500/20 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
             <img 
@@ -75,14 +75,14 @@ const ExitIntentPopup = ({ onEnquiryClick }) => {
         {/* Content - Scrollable */}
         <div className="overflow-y-auto flex-1 p-4 md:p-8">
           <div className="text-center mb-4 md:mb-6">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-pink-50 px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-purple-200 mb-3 md:mb-4">
-              <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-purple-600" />
-              <span className="text-purple-800 font-semibold text-sm md:text-base">Limited Time Offer</span>
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-50 to-blue-50 px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-blue-200 mb-3 md:mb-4">
+              <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-blue-700" />
+              <span className="text-blue-900 font-semibold text-sm md:text-base">Limited Time Offer</span>
             </div>
             <h3 className="text-lg md:text-2xl font-bold text-slate-900 mb-2 md:mb-3">
               {projectInfo.configuration}
             </h3>
-            <p className="text-base md:text-xl text-purple-600 font-bold mb-1 md:mb-2">
+            <p className="text-base md:text-xl text-blue-700 font-bold mb-1 md:mb-2">
               Starting from {projectInfo.startingPrice}
             </p>
             <p className="text-slate-600 text-sm md:text-base">
@@ -113,7 +113,7 @@ const ExitIntentPopup = ({ onEnquiryClick }) => {
           <div className="space-y-3">
             <Button 
               onClick={handleEnquireNow}
-              className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-4 md:py-6 text-base md:text-lg font-bold shadow-lg"
+              className="w-full bg-gradient-to-r from-blue-700 to-sky-500 hover:from-purple-700 hover:to-pink-700 text-white py-4 md:py-6 text-base md:text-lg font-bold shadow-lg"
             >
               <Sparkles className="w-4 h-4 md:w-5 md:h-5 mr-2" />
               Get Pre-Launch Offers Now
@@ -130,7 +130,7 @@ const ExitIntentPopup = ({ onEnquiryClick }) => {
               </Button>
               <Button
                 variant="outline"
-                className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 py-3 md:py-5 text-sm md:text-base"
+                className="border-2 border-purple-600 text-blue-700 hover:bg-sky-50 py-3 md:py-5 text-sm md:text-base"
                 onClick={() => {
                   const whatsapp = '917066331177';
                   const message = encodeURIComponent('Hi! I saw the exit popup. I am interested in Sai Ananta pre-launch offers.');

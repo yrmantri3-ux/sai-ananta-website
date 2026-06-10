@@ -12,28 +12,28 @@ const AmenitiesSection = () => {
   };
 
   return (
-    <section id="amenities" className="py-24 bg-gradient-to-b from-white via-purple-50 to-pink-50 relative overflow-hidden">
+    <section id="amenities" className="py-24 bg-gradient-to-b from-white via-sky-50 to-blue-50 relative overflow-hidden">
       {/* Background Decorations */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-sky-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-serif text-slate-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             World-Class Amenities
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mx-auto mb-6" />
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-sky-400 rounded-full mx-auto mb-6" />
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             Experience luxury living with premium facilities designed for your comfort
           </p>
         </div>
 
         <Tabs defaultValue="rooftop" className="max-w-6xl mx-auto" onValueChange={setActiveTab}>
-          <div className="mb-12 bg-white/90 backdrop-blur-sm p-2 rounded-2xl border-2 border-purple-200 shadow-xl">
+          <div className="mb-12 bg-white/90 backdrop-blur-sm p-2 rounded-2xl border-2 border-blue-200 shadow-xl">
             <TabsList className="grid w-full grid-cols-3 bg-transparent gap-2">
               <TabsTrigger 
                 value="rooftop" 
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-700 data-[state=active]:to-sky-500 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
               >
                 <span className="block text-center leading-tight">
                   <span className="block">🌅</span>
@@ -42,7 +42,7 @@ const AmenitiesSection = () => {
               </TabsTrigger>
               <TabsTrigger 
                 value="ground"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-700 data-[state=active]:to-sky-500 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
               >
                 <span className="block text-center leading-tight">
                   <span className="block">🏊</span>
@@ -51,7 +51,7 @@ const AmenitiesSection = () => {
               </TabsTrigger>
               <TabsTrigger 
                 value="other"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-700 data-[state=active]:to-sky-500 data-[state=active]:text-white data-[state=inactive]:bg-white data-[state=inactive]:text-slate-700 data-[state=active]:shadow-lg rounded-xl py-4 px-2 text-sm md:text-lg font-bold transition-all border-0"
               >
                 <span className="block text-center leading-tight">
                   <span className="block">⭐</span>
@@ -67,9 +67,9 @@ const AmenitiesSection = () => {
                 {projectInfo.amenities[category].map((amenity, index) => (
                   <div
                     key={index}
-                    className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-purple-100 hover:border-purple-300"
+                    className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-blue-100 hover:border-blue-300"
                   >
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-600 to-sky-400 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                       {renderIcon(amenity.icon)}
                     </div>
                     <h3 className="text-center font-semibold text-slate-800 text-sm md:text-base leading-tight">
@@ -102,7 +102,7 @@ const AmenitiesSection = () => {
             </div>
             
             {/* Decorative Corners */}
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-pink-500/30 to-transparent rounded-bl-full" />
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-sky-500/30 to-transparent rounded-bl-full" />
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-purple-600/30 to-transparent rounded-tr-full" />
           </div>
         </div>

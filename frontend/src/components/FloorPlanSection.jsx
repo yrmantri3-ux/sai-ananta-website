@@ -7,7 +7,7 @@ const FloorPlanSection = ({ onEnquiryClick }) => {
     <section className="py-32 bg-white relative overflow-hidden">
       {/* Decorative Lotus Elements */}
       <div className="absolute top-10 left-10 w-32 h-32 opacity-10">
-        <svg viewBox="0 0 100 100" className="text-purple-500" fill="currentColor">
+        <svg viewBox="0 0 100 100" className="text-blue-600" fill="currentColor">
           <path d="M50 20 Q30 30 30 50 Q30 70 50 80 Q70 70 70 50 Q70 30 50 20"/>
         </svg>
       </div>
@@ -35,13 +35,13 @@ const FloorPlanSection = ({ onEnquiryClick }) => {
               <div className="absolute inset-0 bg-white/50 backdrop-blur-md" />
               
               {/* Decorative gradient overlays */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-transparent to-pink-500/20" />
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-transparent to-sky-400/20" />
             </div>
 
             {/* Centered Unlock Content */}
             <div className="absolute inset-0 flex items-center justify-center p-4">
-              <div className="text-center space-y-6 md:space-y-8 px-4 md:px-6 glass-card p-6 md:p-12 rounded-3xl max-w-2xl border-2 border-purple-200 spiritual-glow">
-                <div className="w-20 h-20 md:w-28 md:h-28 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-2xl spiritual-glow">
+              <div className="text-center space-y-6 md:space-y-8 px-4 md:px-6 glass-card p-6 md:p-12 rounded-3xl max-w-2xl border-2 border-blue-200 spiritual-glow">
+                <div className="w-20 h-20 md:w-28 md:h-28 mx-auto rounded-full bg-gradient-to-br from-blue-600 to-sky-400 flex items-center justify-center shadow-2xl spiritual-glow">
                   <Lock className="w-10 h-10 md:w-14 md:h-14 text-white" />
                 </div>
                 <h3 className="text-2xl md:text-4xl lg:text-5xl font-serif text-slate-900 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>

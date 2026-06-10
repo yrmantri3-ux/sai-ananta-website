@@ -20,16 +20,16 @@ const Footer = () => {
               Experience the benchmark of blessed living in Wadhmukhwadi, Pune.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-full bg-purple-600 hover:bg-purple-700 flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-blue-700 hover:bg-purple-700 flex items-center justify-center transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-purple-600 hover:bg-purple-700 flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-blue-700 hover:bg-purple-700 flex items-center justify-center transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-purple-600 hover:bg-purple-700 flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-blue-700 hover:bg-purple-700 flex items-center justify-center transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-purple-600 hover:bg-purple-700 flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-blue-700 hover:bg-purple-700 flex items-center justify-center transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
@@ -40,19 +40,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#overview" className="text-slate-400 hover:text-purple-400 transition-colors">Overview</a>
+                <a href="#overview" className="text-slate-400 hover:text-blue-400 transition-colors">Overview</a>
               </li>
               <li>
-                <a href="#pricing" className="text-slate-400 hover:text-purple-400 transition-colors">Pricing</a>
+                <a href="#pricing" className="text-slate-400 hover:text-blue-400 transition-colors">Pricing</a>
               </li>
               <li>
-                <a href="#amenities" className="text-slate-400 hover:text-purple-400 transition-colors">Amenities</a>
+                <a href="#amenities" className="text-slate-400 hover:text-blue-400 transition-colors">Amenities</a>
               </li>
               <li>
-                <a href="#gallery" className="text-slate-400 hover:text-purple-400 transition-colors">Gallery</a>
+                <a href="#gallery" className="text-slate-400 hover:text-blue-400 transition-colors">Gallery</a>
               </li>
               <li>
-                <a href="#location" className="text-slate-400 hover:text-purple-400 transition-colors">Location</a>
+                <a href="#location" className="text-slate-400 hover:text-blue-400 transition-colors">Location</a>
               </li>
             </ul>
           </div>
@@ -62,13 +62,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
             <ul className="space-y-3">
               <li>
-                <a href={`tel:${projectInfo.contact.phone}`} className="flex items-start gap-3 text-slate-400 hover:text-purple-400 transition-colors">
+                <a href={`tel:${projectInfo.contact.phone}`} className="flex items-start gap-3 text-slate-400 hover:text-blue-400 transition-colors">
                   <Phone className="w-5 h-5 flex-shrink-0 mt-0.5" />
                   <span>{projectInfo.contact.phone}</span>
                 </a>
               </li>
               <li>
-                <a href={`mailto:${projectInfo.contact.email}`} className="flex items-start gap-3 text-slate-400 hover:text-purple-400 transition-colors">
+                <a href={`mailto:${projectInfo.contact.email}`} className="flex items-start gap-3 text-slate-400 hover:text-blue-400 transition-colors">
                   <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
                   <span>{projectInfo.contact.email}</span>
                 </a>
@@ -107,8 +107,8 @@ const Footer = () => {
               © {currentYear} Sai Ananta by {projectInfo.developer.name}. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="/privacy-policy" className="hover:text-purple-400 transition-colors">Privacy Policy</a>
-              <a href="/terms-and-conditions" className="hover:text-purple-400 transition-colors">Terms & Conditions</a>
+              <a href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
+              <a href="/terms-and-conditions" className="hover:text-blue-400 transition-colors">Terms & Conditions</a>
             </div>
           </div>
           <p className="text-xs text-slate-500 text-center mt-4">

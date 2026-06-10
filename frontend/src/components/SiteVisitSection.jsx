@@ -64,7 +64,7 @@ const SiteVisitSection = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700 flex items-center gap-2">
-                    <User className="w-4 h-4 text-purple-600" />
+                    <User className="w-4 h-4 text-blue-700" />
                     Full Name *
                   </label>
                   <Input
@@ -74,13 +74,13 @@ const SiteVisitSection = () => {
                     onChange={handleChange}
                     required
                     placeholder="Enter your name"
-                    className="h-12 border-purple-200 focus:border-purple-500"
+                    className="h-12 border-blue-200 focus:border-purple-500"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700 flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-purple-600" />
+                    <Phone className="w-4 h-4 text-blue-700" />
                     Phone Number *
                   </label>
                   <Input
@@ -90,13 +90,13 @@ const SiteVisitSection = () => {
                     onChange={handleChange}
                     required
                     placeholder="Enter your phone"
-                    className="h-12 border-purple-200 focus:border-purple-500"
+                    className="h-12 border-blue-200 focus:border-purple-500"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700 flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-purple-600" />
+                    <Mail className="w-4 h-4 text-blue-700" />
                     Email Address *
                   </label>
                   <Input
@@ -106,13 +106,13 @@ const SiteVisitSection = () => {
                     onChange={handleChange}
                     required
                     placeholder="Enter your email"
-                    className="h-12 border-purple-200 focus:border-purple-500"
+                    className="h-12 border-blue-200 focus:border-purple-500"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700 flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-purple-600" />
+                    <Calendar className="w-4 h-4 text-blue-700" />
                     Preferred Visit Date *
                   </label>
                   <Input
@@ -122,7 +122,7 @@ const SiteVisitSection = () => {
                     onChange={handleChange}
                     required
                     min={new Date().toISOString().split('T')[0]}
-                    className="h-12 border-purple-200 focus:border-purple-500"
+                    className="h-12 border-blue-200 focus:border-purple-500"
                   />
                 </div>
               </div>
@@ -130,7 +130,7 @@ const SiteVisitSection = () => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg hover:shadow-xl transition-all"
+                className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-blue-700 to-sky-500 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg hover:shadow-xl transition-all"
               >
                 {isSubmitting ? 'Scheduling...' : 'Schedule Site Visit'}
               </Button>

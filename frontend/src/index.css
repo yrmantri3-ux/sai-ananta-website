@@ -143,3 +143,12 @@ code {
 .animate-scaleIn {
   animation: scaleIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+
+/* Blue Sky Gradient Text */
+.gradient-text-blue-sky {
+  background: linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
