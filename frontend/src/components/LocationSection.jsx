@@ -12,7 +12,8 @@ const iconMap = {
 
 const LocationSection = () => {
   const mapDirectionsUrl = "https://maps.app.goo.gl/957JadBku8TTEhkj9";
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15120!2d73.94!3d18.63!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDM3JzQ4LjAiTiA3M8KwNTYnMzQuOCJF!5e0!3m2!1sen!2sin!4v1234567890";
+  // Sai Ananta exact location: 18.6424177, 73.87572
+  const mapEmbedUrl = "https://maps.google.com/maps?q=18.6424177,73.87572&hl=en&z=16&output=embed";
 
   return (
     <section id="location" className="py-16 bg-white">
