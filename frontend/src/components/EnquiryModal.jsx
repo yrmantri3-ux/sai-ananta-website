@@ -186,7 +186,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
             disabled={isSubmitting}
             className="w-full h-12 text-lg font-semibold bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white shadow-lg"
           >
-            {isSubmitting ? 'Submitting...' : 'Get Pre Launch Deals'}
+            {isSubmitting ? 'Submitting...' : 'Submit'}
           </Button>
 
           {/* Call Now Section */}
