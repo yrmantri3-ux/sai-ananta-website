@@ -117,7 +117,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
           />
           
           <h2 className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Get Pre Launch Deals
+            Get Best Deal Today
           </h2>
           <p className="text-blue-100 text-xs md:text-sm">Limited time exclusive offers</p>
         </div>
