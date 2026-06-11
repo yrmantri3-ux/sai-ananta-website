@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { projectInfo } from '../data/mock';
 
 const Footer = () => {
@@ -19,20 +19,6 @@ const Footer = () => {
             <p className="text-slate-400 text-sm leading-relaxed">
               Experience the benchmark of blessed living in Wadhmukhwadi, Pune.
             </p>
-            <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-full bg-blue-700 hover:bg-purple-700 flex items-center justify-center transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-blue-700 hover:bg-purple-700 flex items-center justify-center transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-blue-700 hover:bg-purple-700 flex items-center justify-center transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-blue-700 hover:bg-purple-700 flex items-center justify-center transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
