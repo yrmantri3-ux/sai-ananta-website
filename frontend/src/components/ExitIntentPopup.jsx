@@ -96,7 +96,7 @@ const ExitIntentPopup = ({ onEnquiryClick }) => {
             <ul className="space-y-2 text-slate-700 text-sm md:text-base">
               <li className="flex items-start gap-2">
                 <span className="text-green-500 mt-1">✓</span>
-                <span>Best pre-launch prices - Limited units</span>
+                <span>Get Best Deal Today</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500 mt-1">✓</span>
@@ -116,7 +116,7 @@ const ExitIntentPopup = ({ onEnquiryClick }) => {
               className="w-full bg-gradient-to-r from-blue-700 to-sky-500 hover:from-purple-700 hover:to-pink-700 text-white py-4 md:py-6 text-base md:text-lg font-bold shadow-lg"
             >
               <Sparkles className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-              Get Pre-Launch Offers Now
+              Get Best Deal Today
             </Button>
             
             <div className="grid grid-cols-2 gap-2 md:gap-3">
